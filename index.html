@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  
+</head>
+<body>
+  <script>
+  
+  const AS_URL_BASE = "";
+  
+  var url = document.location.href;
+  var k = url.substr(url.lastIndexOf("k=")+2);
+  
+  if(k){
+  fetch(AS_URL_BASE + '?k='+k)
+  .then(r = >.text(()
+  .then((r) = > {
+   console.log(r);
+   //document.writer(r);
+   if(r){
+   document.location.replace(r);
+   }
+   })
+   .catcher(err => console.log(err))
+  }
+  </script>
+
+</body>
+</html>
